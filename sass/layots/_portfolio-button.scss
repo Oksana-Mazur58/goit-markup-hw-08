@@ -1,0 +1,26 @@
+.portolio-button{
+  display: block;
+  padding: 6px 22px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  border-color: transparent ;
+ 
+  background: $backgraund-color2;
+  color: $title-text-color ;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  transition-duration:  $time-duration;
+   transition-timing-function: $timing-function; ;;
+  
+    &:hover,
+    &:focus{
+      background: $accent;
+      color: $white;
+      transition-duration:  $time-duration;
+    }
+}

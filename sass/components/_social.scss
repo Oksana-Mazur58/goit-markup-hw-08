@@ -1,0 +1,30 @@
+.contact{
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-list .link{
+ display: flex;
+ align-items: center;
+ margin-right: 30px;
+  
+}
+.contact-list .link-tel{
+  margin-right: 0px;
+}
+.contact-list :not(:last-child) {
+  margin-right: 10px;
+}
+.contact .link {
+  color: $primary-text-color;
+  transition-duration:  $time-duration;
+  transition-timing-function: $timing-function;
+}
+
+.contact .link:focus,
+.contact .link:hover {
+  color: $accent;
+  
+}

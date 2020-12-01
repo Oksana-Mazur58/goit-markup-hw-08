@@ -1,0 +1,26 @@
+.nav-portfolio{
+  margin-right: 10px;
+}
+
+
+.header{ 
+  border-bottom: 1px solid #ECECEC;
+}
+
+.portfolio-link{
+  text-decoration: none;
+ }
+
+  
+
+.portf-nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 34px;
+
+    & :not( :last-child) { 
+      margin-right: 8px; 
+    }
+}

@@ -1,0 +1,56 @@
+.site-nav{
+  display: inline-flex;
+  margin-left: 93px;
+    & :not( :last-child) { 
+    margin-right: 50px; 
+}
+}
+
+
+.site-nav .link, .contact .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px ;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+   transition-duration:  $time-duration;
+   transition-timing-function: $timing-function;
+
+}
+.site-nav .link {
+  color: $title-text-color;
+}
+.current{
+  position: relative;
+  
+    &:hover, 
+    &:focus{
+      color: $accent;
+      opacity: 1;
+    }
+
+    &::after{
+      position: absolute;
+      bottom: -8px;
+      right: 0px;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: $accent;
+      border-radius: 20px;
+      z-index: 55;
+      transition: opacity 250ms ;
+      transition-timing-function: $timing-function;
+    }
+      &:hover::after,
+      &:focus::after{
+      color: $accent;
+      transition-duration:  $time-duration;
+      }
+}
+
