@@ -1,15 +1,12 @@
-.features{
-  display: inline-flex;
-  margin-right: -30px;
-}
-.item{
-  margin-right: 30px;
-  flex-basis: calc((100% / 4) - 30px);
+// 
+// .item{
+//   margin-right: 30px;
+//   flex-basis: calc((100% / 4) - 30px);
 
-    &:last-child {
-    margin-right: 0;
-    }
-}
+//     &:last-child {
+//     margin-right: 0;
+//     }
+// }
 .features .item{
   margin-top: 94px;
 

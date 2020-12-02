@@ -134,6 +134,7 @@ body {
 
 .contact-nav-svg {
   width: 16px;
+  margin-right: 10px;
 }
 
 .mail-size {
@@ -502,20 +503,6 @@ body {
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
-}
-
-.features {
-  display: inline-flex;
-  margin-right: -30px;
-}
-
-.item {
-  margin-right: 30px;
-  flex-basis: calc((100% / 4) - 30px);
-}
-
-.item:last-child {
-  margin-right: 0;
 }
 
 .features .item {
