@@ -1,3 +1,40 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  outline: 1px, solid, red;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .list {
   padding: 0px;
   margin: 0px;
@@ -21,14 +58,6 @@ body {
 .subject {
   margin-top: 0px;
   margin-bottom: 0px;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .logo {
@@ -117,10 +146,6 @@ body {
   margin-right: 0px;
 }
 
-.contact-list :not(:last-child) {
-  margin-right: 10px;
-}
-
 .contact .link {
   color: #757575;
   transition-duration: 250ms;
@@ -133,7 +158,6 @@ body {
 }
 
 .contact-nav-svg {
-  width: 16px;
   margin-right: 10px;
 }
 
@@ -225,6 +249,7 @@ body {
 
 .form-button-mailing {
   padding: 10px 28px;
+  margin-bottom: 0;
 }
 
 .footer-form-input {
@@ -262,6 +287,18 @@ body {
   display: flex;
   align-items: center;
   margin-right: auto;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-title {

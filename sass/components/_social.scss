@@ -14,9 +14,7 @@
 .contact-list .link-tel{
   margin-right: 0px;
 }
-.contact-list :not(:last-child) {
-  margin-right: 10px;
-}
+
 .contact .link {
   color: $primary-text-color;
   transition-duration:  $time-duration;
@@ -27,4 +25,26 @@
 .contact .link:hover {
   color: $accent;
   
+}
+.contact-nav-svg{
+  margin-right: 10px;
+  
+}
+.mail-size{
+ width: 16px; 
+ height: 12px;
+}
+.tel-size{
+  width: 10px;
+  height: 16px;
+}
+.link{
+  fill: $primary-text-color;
+  transition-duration: 520ms ;
+  transition-timing-function: $timing-function; ;;
+
+    &:hover .contact-nav-svg,
+    &:focus .contact-nav-svg{
+      fill: $accent;
+    }
 }
