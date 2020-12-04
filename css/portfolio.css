@@ -50,6 +50,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   background-color: #FFFFFF;
   color: #757575;
   font-family: Roboto, sans-serif;
@@ -204,9 +205,31 @@ body {
 
 .social-link {
   display: flex;
-  margin-bottom: 30px;
-  margin-right: 32px;
-  margin-left: 32px;
+  margin-right: -10px;
+}
+
+@media screen and (max-width: 766px) {
+  .social-link {
+    margin-bottom: 24px;
+    margin-right: 122px;
+    margin-left: 122px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social-link {
+    margin-bottom: 24px;
+    margin-right: 74px;
+    margin-left: 74px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-link {
+    margin-bottom: 30px;
+    margin-right: 32px;
+    margin-left: 32px;
+  }
 }
 
 .social-titel {
@@ -233,10 +256,6 @@ body {
 .social-item {
   margin-right: 10px;
   flex-basis: calc((100% / 4) - 10px);
-}
-
-.social-item:last-child {
-  margin-right: 0;
 }
 
 .social-icon {
@@ -309,6 +328,12 @@ body {
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-work {
+    display: none;
+  }
 }
 
 .nav-portfolio {

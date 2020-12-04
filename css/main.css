@@ -50,6 +50,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   background-color: #FFFFFF;
   color: #757575;
   font-family: Roboto, sans-serif;
@@ -409,9 +410,31 @@ body {
 
 .social-link {
   display: flex;
-  margin-bottom: 30px;
-  margin-right: 32px;
-  margin-left: 32px;
+  margin-right: -10px;
+}
+
+@media screen and (max-width: 766px) {
+  .social-link {
+    margin-bottom: 24px;
+    margin-right: 122px;
+    margin-left: 122px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social-link {
+    margin-bottom: 24px;
+    margin-right: 74px;
+    margin-left: 74px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-link {
+    margin-bottom: 30px;
+    margin-right: 32px;
+    margin-left: 32px;
+  }
 }
 
 .social-titel {
@@ -438,10 +461,6 @@ body {
 .social-item {
   margin-right: 10px;
   flex-basis: calc((100% / 4) - 10px);
-}
-
-.social-item:last-child {
-  margin-right: 0;
 }
 
 .social-icon {
@@ -542,9 +561,16 @@ body {
   text-align: center;
 }
 
+@media screen and (max-width: 1199px) {
+  .section-work {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .features {
     margin-right: -30px;
+    margin-top: -30px;
     display: inline-flex;
     flex-wrap: wrap;
   }
@@ -553,6 +579,7 @@ body {
 @media screen and (min-width: 768px) {
   .item {
     margin-right: 30px;
+    margin-top: 30px;
     flex-basis: calc((100% / 2) - 30px);
   }
 }
@@ -567,10 +594,6 @@ body {
   }
 }
 
-.features .item {
-  margin-top: 60px;
-}
-
 .features .item::before {
   content: "";
   display: flex;
@@ -580,6 +603,12 @@ body {
   background-position: center;
   background-color: #F5F4FA;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .features .item {
+    margin-top: 0;
+  }
 }
 
 .features-title {
@@ -630,12 +659,6 @@ body {
 
 .icon-astronaut::before {
   background-image: url(../Image/astronaut.svg);
-}
-
-@media screen and (max-width: 1200px) {
-  .our-works-section {
-    display: none;
-  }
 }
 
 .our-work {
@@ -736,9 +759,10 @@ body {
 }
 
 .customers {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .customers-link {
@@ -767,11 +791,26 @@ body {
 
 .customers-list {
   margin-right: 30px;
-  flex-basis: calc((100% / 6) - 30px);
+  margin-bottom: 30px;
 }
 
-.customers-list:last-child {
-  margin-right: 0px;
+@media screen and (max-width: 767px) {
+  .customers-list {
+    flex-wrap: nowrap;
+    flex-basis: calc((100% / 2) - 30px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers-list {
+    flex-basis: calc((100% / 3) - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers-list {
+    flex-basis: calc((100% / 6) - 30px);
+  }
 }
 
 .icon-one {
