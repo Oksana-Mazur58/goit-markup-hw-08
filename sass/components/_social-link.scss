@@ -1,6 +1,6 @@
 .social-link{
   display: flex;
-  margin-right: -10px;
+
   
   @media screen and (max-width: 766px){
   margin-bottom: 24px;
@@ -17,6 +17,14 @@
   margin-right: 32px;
   margin-left: 32px; 
   }
+
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-item{
+  
+  flex-basis: calc((100% / 4) - 10px);
 
 }
 .social-titel{
@@ -39,11 +47,6 @@
       &:focus .social-icon{
         fill: $white;
       }
-}
-.social-item{
-   margin-right: 10px;
-  flex-basis: calc((100% / 4) - 10px);
-
 }
 
 .social-icon{

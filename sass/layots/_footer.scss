@@ -1,24 +1,41 @@
 .footer {
   background: $background-color;
+   @media screen and (min-width: 1200px){
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+}
+.container-logo{
+  text-align: center;
+  @media screen and (max-width: 767px){
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px){
+  text-align: left;
+  
 }
 
+}
 
 .footer-container{
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 1200px){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   
+     }
 
 }
 
 .logo-footer {
   display: inline-block;
   color: $white;
-  margin-top: 60px;
   margin-bottom: 20px;
   
-}
-.addres{
-  margin-bottom: 60px;
 }
 
 .footer-contact{
@@ -46,12 +63,18 @@
     
 }
 .social-join{
+  @media screen and (max-width: 767px){
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px){
   margin-left: 70px;
   margin-right: 93px;
-}
-.social-footer-link{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
 }
+
 
 .social-title-footer{
   display: inline-flex;
@@ -81,12 +104,14 @@
   flex-basis: calc((100% /4) * 10px);
 
     &:last-child{
-    margin-right: 0px;
+    margin-right: 0px;}
 }
-}
+
 
 
 .footer-tatel{
+display: block;
+text-align: center;
 margin-bottom: 20px;
 font-size: 14px;
 font-weight: 700;
@@ -94,5 +119,19 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 color: $white;
 text-transform: uppercase;
-
+@media screen and (min-width: 1200px){
+  text-align: left;
+}
+}
+.footer-tablet{
+  @media screen and (min-width: 768px){
+  display: flex;}
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 60px;
+    justify-content: space-around;
+  }
 }
