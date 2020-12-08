@@ -1,10 +1,17 @@
 .site-nav{
-  display: inline-flex;
-  margin-left: 93px;
+  display: none;
+  margin-left: 88px;
     & :not( :last-child) { 
     margin-right: 50px; 
 }
+@media screen and (min-width: 768px){
+  display: inline-flex;
 }
+@media screen and (min-width: 1200px){
+margin-left: 93px;
+}
+}
+
 
 
 .site-nav .link, .contact .link {
@@ -53,4 +60,20 @@
       transition-duration:  $time-duration;
       }
 }
+.button-menu-mobile{
 
+  @media screen and (max-width: 767px){
+    display: block;
+  border: none;
+  background-color: white;
+}
+@media screen and (min-width: 768px){
+    display: none;}
+
+}
+
+.icon-menu-mobile{
+  width: 24px;
+  height: 16px;
+
+}
