@@ -30,6 +30,7 @@ html{
   margin: 0px;
   list-style: none;
   font-style: normal;
+  
 }
 .img{
   display: block;
@@ -44,6 +45,9 @@ body {
   color: $primary-text-color;
   font-family: $main-font;
 
+}
+body.modal-open{
+overflow: hidden;
 }
 .subject
 {

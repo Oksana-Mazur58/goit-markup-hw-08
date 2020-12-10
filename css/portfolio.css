@@ -56,6 +56,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .subject {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -154,25 +158,6 @@ body {
 .current:hover::after, .current:focus::after {
   color: #2196f3;
   transition-duration: 250ms;
-}
-
-@media screen and (max-width: 767px) {
-  .button-menu-mobile {
-    display: block;
-    border: none;
-    background-color: white;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .button-menu-mobile {
-    display: none;
-  }
-}
-
-.icon-menu-mobile {
-  width: 24px;
-  height: 16px;
 }
 
 .contact {

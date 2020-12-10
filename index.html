@@ -23,11 +23,16 @@
           <li ><a href="./portfolio.html" class="link ">Портфоліо</a></li>
           <li ><a href="" class="link ">Контакти</a></li>
         </ul>
-        <button class="button-menu-mobile" type="button">
+        <div class="mobile-menu">
+        <button class="button-menu-mobile button-mobile-open " type="button"
+        data-menu-button>
           <svg class="icon-menu-mobile">
-            <use href="./Image/symbol-defs1.svg#icon-menu-mobile"></use>
+            <use class="icon-menu" href="./Image/symbol-defs1.svg#icon-menu-mobile"></use>
+            <use class="icon-cros" href="./Image/symbol-defs1.svg#icon-mobile-close"></use>
           </svg>
         </button>
+      
+        </div>
         </nav>
       
       <address>
@@ -53,6 +58,33 @@
       </address>
       </div>
     </header>
+    <!-- Menu-mobile -->
+     <div class="mobile-version section is-open" data-menu>
+      <ul class="mobile-site-nav list">
+      <li class="mobile-nav-list item-nav"><a href="./index.html" class="mobile-link link current"> Студія</a></li>
+      <li class="mobile-nav-list"><a href="./portfolio.html" class="mobile-link link ">Портфоліо</a></li>
+      <li class="mobile-nav-list"><a href="" class="mobile-link link ">Контакти</a></li>
+    </ul>
+      <ul class="mobile-contact list">
+        <li class="mobile-contact-list">
+          <a class="mobile-item link-mail" href="mailto:info@Devstudio.com:">
+            <svg class="contact-nav-svg nav-portfolio mail-size">
+              <use href="./Image/symbol-defs.svg#icon-mail"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="mobile-contact-list">
+          <a class="mobile-item link-tel" href="tel:+380961111111">
+      
+            <svg class="contact-nav-svg tel-size">
+              <use href="./Image/symbol-defs.svg#icon-phone"></use>
+            </svg>
+            +38096 111 11 11</a>
+        </li>
+      </ul>
+  </div>
+
     <main>
       <!-- Hiro -->
       <section class="hiro">
@@ -387,5 +419,6 @@
     </div>
     </div>
     <script src="./js/modal.js"></script> 
+    <script src="./js/menu.js"></script>
   </body>
 </html>

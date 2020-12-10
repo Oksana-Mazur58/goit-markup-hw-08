@@ -1,0 +1,100 @@
+.mobile-version{
+  @media screen and (min-width: 768px){
+  display: none;
+}
+}
+
+   
+  .mobile-version{
+    display: none;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+   
+  
+  
+  }
+  
+.mobile-version.is-open{
+  display: block;
+}
+
+.mobile-link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+    transition-duration:  $time-duration;
+    transition-timing-function: $timing-function;
+
+
+}
+
+.mobile-item{
+  text-decoration: none;
+  font-family: Roboto;
+font-size: 18px;
+
+font-weight: 500;
+line-height: 1.16;
+letter-spacing: 0.02em;
+color: $primary-text-color;
+  
+}
+.mobile-site-nav{
+  margin-bottom: 60px;
+}
+.mobile-nav-list:not(:last-child){
+  margin-bottom: 46px;
+}
+.mobile-contact-list:not(:last-child){
+margin-bottom: 16px;
+}
+
+.button-menu-mobile{
+
+  @media screen and (max-width: 767px){
+  display: block;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  padding-bottom: 20px;
+  padding-top: 20px;
+       
+}
+
+    &:hover,
+    &:focus{
+        fill: $accent;
+    }
+@media screen and (min-width: 768px){
+    display: none;}
+
+}
+
+.button-menu-mobile .icon-cros{
+@media screen and (max-width: 767px){
+    display: none;
+  }
+}
+.button-menu-mobile.is-open .icon-cros{
+  @media screen and (max-width: 767px){
+    display: block;
+  }
+}
+.button-menu-mobile.is-open .icon-menu{
+  @media screen and (max-width: 767px){
+    display: none;
+  }
+  }
+
+.icon-menu-mobile{
+  width: 24px;
+  height: 16px;
+
+}
+
