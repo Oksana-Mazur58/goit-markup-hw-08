@@ -257,6 +257,7 @@ body.modal-open {
   position: absolute;
   left: 0;
   right: 0;
+  background-color: #FFFFFF;
 }
 
 .mobile-version.is-open {
@@ -325,13 +326,13 @@ body.modal-open {
 }
 
 @media screen and (max-width: 767px) {
-  .button-menu-mobile.is-open .icon-cros {
+  .button-menu-mobile.is-open .icon-menu {
     display: block;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .button-menu-mobile.is-open .icon-menu {
+  .button-menu-mobile.is-open .icon-cros {
     display: none;
   }
 }
