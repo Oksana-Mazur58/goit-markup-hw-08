@@ -22,6 +22,15 @@
                 <li class="item-nav"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
                 <li ><a href="" class="link ">Контакти</a></li>
             </ul>
+            <div class="mobile-menu">
+                <button class="button-menu-mobile button-mobile-open " type="button" data-menu-button>
+                    <svg class="icon-menu-mobile">
+                        <use class="icon-menu" href="./Image/symbol-defs1.svg#icon-menu-mobile"></use>
+                        <use class="icon-cros" href="./Image/symbol-defs1.svg#icon-mobile-close"></use>
+                    </svg>
+                </button>
+            
+            </div>
         </nav>
     
         <!--Contacts-->
@@ -48,6 +57,32 @@
         </div>
     </header>
     <main>
+        <!-- Menu-mobile -->
+        <div class="mobile-version section" data-menu>
+            <ul class="mobile-site-nav list">
+                <li class="mobile-nav-list item-nav"><a href="./index.html" class="mobile-link link current"> Студія</a></li>
+                <li class="mobile-nav-list"><a href="./portfolio.html" class="mobile-link link ">Портфоліо</a></li>
+                <li class="mobile-nav-list"><a href="" class="mobile-link link ">Контакти</a></li>
+            </ul>
+            <ul class="mobile-contact list">
+                <li class="mobile-contact-list">
+                    <a class="mobile-item link-mail" href="mailto:info@Devstudio.com:">
+                        <svg class="contact-nav-svg nav-portfolio mail-size">
+                            <use href="./Image/symbol-defs.svg#icon-mail"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="mobile-contact-list">
+                    <a class="mobile-item link-tel" href="tel:+380961111111">
+        
+                        <svg class="contact-nav-svg tel-size">
+                            <use href="./Image/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                        +38096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
         <section class="portfolio section">
             <div class="container portf-cont" >
         <ul class="portf-nav list">
@@ -63,8 +98,17 @@
             <li class="portf-item ">
                 <div class="port-img">
                 <a href="" class="portfolio-link">
+                    <picture>
+                        <source srcset="./Image/portfolio/dekstop/portfolio-desktop-img(1).jpg 1x, ./Image/portfolio/dekstop/portfolio-desktop-img(1)@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./Image/portfolio/tablet/portfolio-teblet-img(1).jpg 1x, ./Image/portfolio/tablet/portfolio-teblet-img(1)@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./Image/portfolio/mobile/portfolio-mobile-img(1).jpg 1x, ./Image/portfolio/mobile/portfolio-mobile-img(1)@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                    <img src="./Image/img.jpg" class="img" alt="" width="368" height="294">
+                    </picture>
                 
-                <img src="./Image/img.jpg" class="img" alt="" width="368" height="294">
+            
                 <p class="port-img-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                     платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -81,7 +125,19 @@
                 <div class="port-img">
                 
                 <a href="" class="portfolio-link">
-                <img src="./Image/img(1).jpg" class="img" alt="" width="368" height="294">
+                    <picture>
+                        <source
+                            srcset="./Image/portfolio/dekstop/portfolio-desktop-img(2).jpg 1x, ./Image/portfolio/dekstop/portfolio-desktop-img(2)@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source
+                            srcset="./Image/portfolio/tablet/portfolio-teblet-img(2).jpg 1x, ./Image/portfolio/tablet/portfolio-teblet-img(2)@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source
+                            srcset="./Image/portfolio/mobile/portfolio-mobile-img(2).jpg 1x, ./Image/portfolio/mobile/portfolio-mobile-img(2)@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./Image/img(1).jpg" class="img" alt="" width="368" height="294">
+                    </picture>
+               
                 <p class="port-img-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis amet pariatur accusamus non
                 suscipit impedit. Qui optio labore, animi velit odio expedita sunt minima! </p></a></div>
                     <div class="portf-foto-description">
@@ -96,7 +152,20 @@
                         Facilis amet pariatur accusamus
                         non suscipit impedit. Qui optio labore, animi velit odio expedita sunt minima! </p>
                 <a href="" class="portfolio-link">
-                <img src="./Image/img(2).jpg" class="img" alt="" width="368" height="294"></a></div>
+                    <picture>
+                        <source
+                            srcset="./Image/portfolio/dekstop/portfolio-desktop-img(3).jpg 1x, ./Image/portfolio/dekstop/portfolio-desktop-img(3)@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source
+                            srcset="./Image/portfolio/tablet/portfolio-teblet-img(3).jpg 1x, ./Image/portfolio/tablet/portfolio-teblet-img(3)@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source
+                            srcset="./Image/portfolio/mobile/portfolio-mobile-img(3).jpg 1x, ./Image/portfolio/mobile/portfolio-mobile-img(3)@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./Image/img(2).jpg" class="img" alt="" width="368" height="294">
+                    </picture>
+                </a>
+            </div>
                     <div class="portf-foto-description">
                 <h2 class="portfolio-work">Ресторан Seafood</h2>
                     <p class="work-section">Приложение</p>
@@ -107,8 +176,20 @@
                     <p class="port-img-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                         Facilis amet pariatur accusamus
                         non suscipit impedit. Qui optio labore, animi velit odio expedita sunt minima! </p>
-                <a href="" class="portfolio-link">
-                <img src="./Image/img(2.1).jpg"  class="img" alt="" width="368" height="294"></a></div>
+                <a  href="" class="portfolio-link">
+                <picture>
+                    <source
+                        srcset="./Image/portfolio/dekstop/portfolio-desktop-img(4).jpg 1x, ./Image/portfolio/dekstop/portfolio-desktop-img(4)@2x.jpg 2x"
+                        media="(min-width: 1200px)" />
+                    <source
+                        srcset="./Image/portfolio/tablet/portfolio-teblet-img(4).jpg 1x, ./Image/portfolio/tablet/portfolio-teblet-img(4)@2x.jpg 2x"
+                        media="(min-width: 768px)" />
+                    <source
+                        srcset="./Image/portfolio/mobile/portfolio-mobile-img(4).jpg 1x, ./Image/portfolio/mobile/portfolio-mobile-img(4)@2x.jpg 2x"
+                        media="(max-width: 767px)" />
+                    <img src="./Image/img(2.1).jpg" class="img" alt="" width="368" height="294">
+                </picture>
+                </a></div>
                 <div class="portf-foto-description">
                     <h2 class="portfolio-work">Проект Prime</h2>
                     <p class="work-section">Маркетинг</p>
@@ -119,7 +200,19 @@
                     <p class="port-img-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis amet pariatur accusamus
                         non suscipit impedit. Qui optio labore, animi velit odio expedita sunt minima! </p>
                 <a href="" class="portfolio-link" >
-                <img src="./Image/img(3).jpg" class="img" alt="" width="368" height="294"></a></div>
+                    <picture>
+                        <source
+                            srcset="./Image/portfolio/dekstop/portfolio-desktop-img(5).jpg 1x, ./Image/portfolio/dekstop/portfolio-desktop-img(5)@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source
+                            srcset="./Image/portfolio/tablet/portfolio-teblet-img(5).jpg 1x, ./Image/portfolio/tablet/portfolio-teblet-img(5)@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source
+                            srcset="./Image/portfolio/mobile/portfolio-mobile-img(5).jpg 1x, ./Image/portfolio/mobile/portfolio-mobile-img(5)@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                    <img src="./Image/img(3).jpg" class="img" alt="" width="368" height="294">
+                    </picture>
+                </a></div>
                 <div class="portf-foto-description">
                     <h2 class="portfolio-work">Проект Boxes</h2>
                     <p class="work-section">Приложение</p>
@@ -131,7 +224,19 @@
                 <p class="port-img-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Facilis amet pariatur accusamus non suscipit impedit. Qui optio labore, animi velit odio expedita sunt minima! </p>
                 <a href="" class="portfolio-link">
-                <img src="./Image/img(4).jpg" class="img" alt="" width="368" height="294"></a></div>
+                    <picture>
+                        <source
+                            srcset="./Image/portfolio/dekstop/portfolio-desktop-img(6).jpg 1x, ./Image/portfolio/dekstop/portfolio-desktop-img(6)@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source
+                            srcset="./Image/portfolio/tablet/portfolio-teblet-img(6).jpg 1x, ./Image/portfolio/tablet/portfolio-teblet-img(6)@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source
+                            srcset="./Image/portfolio/mobile/portfolio-mobile-img(6).jpg 1x, ./Image/portfolio/mobile/portfolio-mobile-img(6)@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./Image/img(4).jpg" class="img" alt="" width="368" height="294">
+                    </picture>
+                </a></div>
                    <div class="portf-foto-description">
                        <h2 class="portfolio-work">Inspiration has no Borders</h2>
                     <p class="work-section">Веб-сайт</p>
@@ -142,7 +247,19 @@
                 <div class="port-img">
                 <p class="port-img-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis amet pariatur accusamus non suscipit impedit. Qui optio labore, animi velit odio expedita sunt minima! </p>
                 <a href="" class="portfolio-link">
-                <img src="./Image/img(5).jpg" class="img" alt="" width="368" height="294"></a></div>
+                    <picture>
+                        <source
+                            srcset="./Image/portfolio/dekstop/portfolio-desktop-img(7).jpg 1x, ./Image/portfolio/dekstop/portfolio-desktop-img(7)@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source
+                            srcset="./Image/portfolio/tablet/portfolio-teblet-img(7).jpg 1x, ./Image/portfolio/tablet/portfolio-teblet-img(7)@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source
+                            srcset="./Image/portfolio/mobile/portfolio-mobile-img(7).jpg 1x, ./Image/portfolio/mobile/portfolio-mobile-img(7)@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./Image/img(5).jpg" class="img" alt="" width="368" height="294">
+                    </picture>
+                </a></div>
                 <div class="portf-foto-description">
                     <h2 class="portfolio-work">Издание Limited Edition</h2>
                     <p class="work-section">Дизайн</p>
@@ -153,7 +270,19 @@
                 <div class="port-img">
                 <p class="port-img-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis amet pariatur accusamus non suscipit impedit. Qui optio labore, animi velit odio expedita sunt minima! </p>
                 <a href="" class="portfolio-link">
-                <img src="./Image/img(6).jpg" class="img" alt="" width="368" height="294"></a></div>
+                    <picture>
+                        <source
+                            srcset="./Image/portfolio/dekstop/portfolio-desktop-img(8).jpg 1x, ./Image/portfolio/dekstop/portfolio-desktop-img(8)@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source
+                            srcset="./Image/portfolio/tablet/portfolio-teblet-img(8).jpg 1x, ./Image/portfolio/tablet/portfolio-teblet-img(8)@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source
+                            srcset="./Image/portfolio/mobile/portfolio-mobile-img(8).jpg 1x, ./Image/portfolio/mobile/portfolio-mobile-img(8)@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                    <img src="./Image/img(6).jpg" class="img" alt="" width="368" height="294">
+                    </picture>
+                </a></div>
                 <div class="portf-foto-description">
                     <h2 class="portfolio-work">Проект LAB</h2>
                     <p class="work-section">Маркетинг</p>
@@ -164,7 +293,19 @@
                 <div class="port-img">
                 <p class="port-img-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis amet pariatur accusamus non suscipit impedit. Qui optio labore, animi velit odio expedita sunt minima! </p>
                 <a href="" class="portfolio-link">
-                <img src="./Image/img(7).jpg" class="img" alt="" width="368" height="294"></a></div>
+                    <picture>
+                        <source
+                            srcset="./Image/portfolio/dekstop/portfolio-desktop-img(9).jpg 1x, ./Image/portfolio/dekstop/portfolio-desktop-img(9)@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source
+                            srcset="./Image/portfolio/tablet/portfolio-teblet-img(9).jpg 1x, ./Image/portfolio/tablet/portfolio-teblet-img(9)@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source
+                            srcset="./Image/portfolio/mobile/portfolio-mobile-img(9).jpg 1x, ./Image/portfolio/mobile/portfolio-mobile-img(9)@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                    <img src="./Image/img(7).jpg" class="img" alt="" width="368" height="294">
+                    </picture>
+                </a></div>
                 <div class="portf-foto-description">
                     <h2 class="portfolio-work">Growing Business</h2>
                     <p class="work-section">Приложение</p>
