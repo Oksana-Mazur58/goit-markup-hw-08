@@ -17,12 +17,6 @@ html {
   padding-right: 15px;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -351,7 +345,6 @@ body.modal-open {
   padding: 10px 34px;
   min-width: 200px;
   height: 50px;
-  margin-bottom: 200px;
   font-family: inherit;
   background: #2196f3;
   color: #FFFFFF;
@@ -707,29 +700,75 @@ body.modal-open {
 }
 
 .hiro {
+  height: 400px;
   display: flex;
   background: #2F303A;
   text-align: center;
-  height: 600px;
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../Image/Img (8).jpg");
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../Image/hiro/mobile/hiro-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hiro {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../Image/hiro/mobile/hiro-mobile@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hiro {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+  }
+}
+
+@media (min-width: 480px) {
+  .hiro {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../Image/hiro/tablet/hiro-tablet-img.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hiro {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../Image/hiro/tablet/hiro-tablet-img@2x.jpg");
+  }
+}
+
+@media (min-width: 780px) {
+  .hiro {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../Image/hiro/dekstop/hiro-dekstop-img.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hiro {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../Image/hiro/dekstop/hiro-dekstop-img@2x.jpg");
+  }
+}
+
 .hiro-title {
   margin-top: 0px;
   margin-bottom: 30px;
-  padding-top: 200px;
   color: #FFFFFF;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.36;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1199px) {
+  .hiro-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .main-nav {
