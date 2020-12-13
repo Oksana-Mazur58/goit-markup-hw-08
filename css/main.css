@@ -392,6 +392,13 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    height: 609px;
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal {
     height: 609px;
