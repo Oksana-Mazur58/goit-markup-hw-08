@@ -83,12 +83,12 @@ margin-bottom: 16px;
     display: none;
   }
 }
-.button-menu-mobile.is-open .icon-menu{
+.button-menu-mobile.is-open .icon-cros{
   @media screen and (max-width: 767px){
     display: block;
   }
 }
-.button-menu-mobile.is-open .icon-cros{
+.button-menu-mobile.is-open .icon-menu{
   @media screen and (max-width: 767px){
     display: none;
   }

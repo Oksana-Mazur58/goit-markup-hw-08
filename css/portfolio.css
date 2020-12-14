@@ -236,13 +236,13 @@ body.modal-open {
 }
 
 @media screen and (max-width: 767px) {
-  .button-menu-mobile.is-open .icon-menu {
+  .button-menu-mobile.is-open .icon-cros {
     display: block;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .button-menu-mobile.is-open .icon-cros {
+  .button-menu-mobile.is-open .icon-menu {
     display: none;
   }
 }
@@ -596,6 +596,10 @@ body.modal-open {
   transition-duration: 250ms;
 }
 
+.portfolio-foto {
+  text-align: -webkit-center;
+}
+
 @media screen and (max-width: 767px) {
   .portfolio-foto :first-child {
     margin-top: 0px;
@@ -625,7 +629,6 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .portf-item {
     width: 354px;
-    height: 440px;
     margin-right: 30px;
     flex-basis: calc((100% - 2 * 30px) / 2);
   }
@@ -713,6 +716,7 @@ body.modal-open {
 
 .portf-foto-description {
   border: 1px solid #EEEEEE;
+  text-align: left;
 }
 
 .portfolio-work {
@@ -727,6 +731,12 @@ body.modal-open {
   border-color: #757575;
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio-work {
+    padding-top: 20px;
+  }
+}
+
 .work-section {
   margin-bottom: 20px;
   margin-top: 0px;
@@ -735,6 +745,12 @@ body.modal-open {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
+}
+
+.img-portf {
+  display: block;
+  max-width: 100%;
+  width: 100%;
 }
 
 .footer {
