@@ -734,6 +734,7 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .portfolio-work {
     padding-top: 20px;
+    padding-bottom: 2px;
   }
 }
 
