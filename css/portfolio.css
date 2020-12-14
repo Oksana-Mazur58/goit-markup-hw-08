@@ -447,15 +447,15 @@ body.modal-open {
   color: 255,255,255,0,6;
 }
 
-@media screen and (min-width: 1200px) {
-  .footer-form-input {
-    width: 358px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .footer-form-input {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form-input {
+    width: 358px;
   }
 }
 
@@ -678,7 +678,13 @@ body.modal-open {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
+  .port-img {
+    height: 294px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .port-img {
     height: 294px;
   }

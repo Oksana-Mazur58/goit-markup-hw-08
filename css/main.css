@@ -693,15 +693,15 @@ body.modal-open {
   color: 255,255,255,0,6;
 }
 
-@media screen and (min-width: 1200px) {
-  .footer-form-input {
-    width: 358px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .footer-form-input {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form-input {
+    width: 358px;
   }
 }
 
@@ -983,6 +983,10 @@ body.modal-open {
 
 .section-our-team {
   background-color: #F5F4FA;
+}
+
+.our-team {
+  text-align: -webkit-center;
 }
 
 @media screen and (min-width: 768px) {
